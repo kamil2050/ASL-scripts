@@ -1,14 +1,9 @@
 state("APK-Win64-Shipping")
 {
-  byte load : 0x5E297E8;
+  int load : 0x05C02470, 0x8, 0x448;
 }
 
 isLoading
 {
-if(current.load == 0){
-return true;
-} else
-{
-return false;
-}
+return current.load != 0;
 }
