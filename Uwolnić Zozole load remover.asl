@@ -5,10 +5,5 @@ state("Zozole")
 
 isLoading
 {
-if(current.load > 0){
-return true;
-} else
-{
-return false;
-}
+return current.load != 0;
 }
