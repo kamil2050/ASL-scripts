@@ -1,9 +1,9 @@
 state("Zozole")
 {
-  byte load : 0x588E0;
+   int load : 0x59078;
 }
 
 isLoading
 {
-return current.load != 0;
+   return current.load !=0;
 }
